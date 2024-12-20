@@ -12,7 +12,7 @@ function App() {
     <Router>
       <div className="h-screen flex flex-col items-center justify-center bg-gradient-to-br from-navy-900 to-gray-800 text-white">
         <header className="flex justify-between w-full px-10 py-5 items-center">
-          <h1 className="text-2xl font-bold">MyApp</h1>
+          <h1 className="text-2xl font-bold">Multi Scan</h1>
           <nav>
             <Link to="/login" className="mx-3 hover:text-blue-400 transition">
               Login
@@ -29,18 +29,6 @@ function App() {
           </nav>
         </header>
 
-        {/* Lottie Animation */}
-        {/* <div className="w-96 h-96">
-          <lottie-player
-            autoplay
-            controls
-            loop
-            mode="normal"
-            src="https://assets3.lottiefiles.com/packages/lf20_UJNc2t.json"
-            style="width: 320px"
-          ></lottie-player>
-        </div> */}
-
         {/* Routes */}
         <Routes>
           <Route path="/login" element={<LoginPage />} />
@@ -53,3 +41,9 @@ function App() {
 }
 
 export default App;
+
+// import { useTelegramWebApp } from "@telegram-web-app/react";
+
+// export const App = () => {
+//   const telegram = useTelegramWebApp();
+// };
